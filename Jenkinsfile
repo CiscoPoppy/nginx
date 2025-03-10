@@ -20,11 +20,11 @@ pipeline {
             }
         }
         
-  //      stage('Verify') {
-    //        steps {
-      //          sh 'curl -s http://localhost | grep "Deployed with Jenkins"'
-        //    }
-       // }
+       stage('Verify') {
+            steps {
+                sh 'curl -s http://localhost | grep "Deployed with Jenkins"'
+            }
+       }
     }
     
     post {
