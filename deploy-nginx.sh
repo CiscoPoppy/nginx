@@ -18,7 +18,7 @@ sudo systemctl enable nginx
 
 # Create a custom index page
 echo "Creating custom index page..."
-echo "<h1>Nginx Deployed with Jenkins!</h1>" > /var/www/html/index.nginx-debian.html
+echo "<h1>Nginx Deployed with Jenkins!</h1>" >> /var/www/html/index.nginx-debian.html
 
 # Verify Nginx is running
 echo "Verifying Nginx status..."
