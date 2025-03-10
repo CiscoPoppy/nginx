@@ -24,7 +24,7 @@ echo "<h1>Nginx Deployed with Jenkins!</h1>" > /var/www/html/index.nginx-debian.
 echo "Verifying Nginx status..."
 if sudo systemctl is-active --quiet nginx; then
   echo "=== SUCCESS: Nginx is running! ==="
-  echo "You can access it at: http://$(hostname -I | awk '{print $1}')"
+  echo "You can access it at: http://$(hostname -I)"
   exit 0
 else
   echo "=== ERROR: Nginx failed to start ==="
